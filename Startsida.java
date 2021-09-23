@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Startsida {
 
 
@@ -11,6 +13,9 @@ public class Startsida {
         System.out.println("4. Lägga till alt ta bort roomservice från något rum");
         System.out.println("5. Få notan för ett valt rum");
         System.out.println("6. Avsluta");
+
+
+
     }
 
 }

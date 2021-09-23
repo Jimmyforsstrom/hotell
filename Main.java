@@ -1,12 +1,14 @@
 package com.company;
 
+import java.sql.Statement;
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+   Scanner scanner = new Scanner(System.in);
         int summa = 0;
+
         Room rum1 = new Room("Jupiter", 3000);
         Room rum2 = new Room("Mars", 1600);
         Room rum3 = new Room("Tellus", 1600);
@@ -23,33 +25,52 @@ public class Main {
         rumslista.add("Rum 5 " + rum5.rumsnamn + "- Pris per natt  " +  rum5.Rumskostnad);
         rumslista.add("Rum 6 " + rum6.rumsnamn + "- Pris per natt  " +  rum6.Rumskostnad);
 
-    Startsida.menu();
-    int val = scanner.nextInt();
+    while(true) {
+        Startsida.menu();
+        int val = scanner.nextInt();
 
-    switch (val) {
-        case 1:
-        break;
-        case 2:
-            break;
-        case 3:
-            for (String s: rumslista
-            ) {
-                System.out.println(s);
+        switch (val) {
+            case 1: // få upp en lista med alla återstående tillgängliga rum
+                for (String w : rumslista
+                ) {
+                    System.out.println(w);
+                }
+
+            {
+                System.out.println("välj vilket rum du vill du boka av dessa");
+                int roomselect = scanner.nextInt();
+                switch (roomselect) {
+                    case 1:
+                        System.out.println("Du valde " + rum1.rumsnamn + " med en kostnad för " + rum1.Rumskostnad);
+                        System.out.println(rum1.rumsnamn + " är nu bokat och borttaget från menyn");
+                        rumslista.remove(rum1);
+
+                }
             }
             break;
-        case 4:
+            case 2:
+                break;
+            case 3:
+                for (String s : rumslista
+                ) {
+                    System.out.println(s);
+                }
 
-            break;
-        case 5:
-            summa = rum1.Rumskostnad;
-            System.out.println(summa);
-            break;
-        case 6:
-            Startsida.menu();
-        break;
-        default:
-            System.out.println("Ej giltigt val, tryck igen");
-            break;
+                break;
+            case 4:
+
+                break;
+            case 5:
+                summa = rum1.Rumskostnad;
+                System.out.println(summa);
+                break;
+            case 6:
+                Startsida.menu();
+                break;
+            default:
+                System.out.println("Ej giltigt val, tryck igen");
+                break;
+        }
     }
 
 
