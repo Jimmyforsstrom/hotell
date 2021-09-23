@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
    Scanner scanner = new Scanner(System.in);
         int summa = 0;
+        boolean Exit = true;
 
         Room rum1 = new Room("Jupiter", 3000);
         Room rum2 = new Room("Mars", 1600);
@@ -25,7 +26,7 @@ public class Main {
         rumslista.add("Rum 5 " + rum5.rumsnamn + "- Pris per natt  " +  rum5.Rumskostnad);
         rumslista.add("Rum 6 " + rum6.rumsnamn + "- Pris per natt  " +  rum6.Rumskostnad);
 
-    while(true) {
+    while(Exit) {
         Startsida.menu();
         int val = scanner.nextInt();
 
@@ -65,7 +66,7 @@ public class Main {
                 System.out.println(summa);
                 break;
             case 6:
-                Startsida.menu();
+                Exit = false;
                 break;
             default:
                 System.out.println("Ej giltigt val, tryck igen");
