@@ -39,7 +39,7 @@ public class Main {
             case 1: // få upp en lista med alla återstående tillgängliga rum
                 for (String w : rumslista
                 ) {
-                   if (rumslista.)
+
                 }
                 System.out.println("välj vilket rum du vill du boka av dessa");
                 int roomselect = scanner.nextInt();
