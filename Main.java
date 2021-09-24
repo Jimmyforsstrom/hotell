@@ -16,7 +16,8 @@ public class Main {
 
 
 
-        List<String> rumslista = new ArrayList();
+
+        ArrayList<String> rumslista = new ArrayList();
         rumslista.add("Rum 1 " + rum1.rumsnamn +  "- Pris per natt " +  rum1.Rumskostnad);
         rumslista.add("Rum 2 " + rum2.rumsnamn + "- Pris per natt  " +  rum2.Rumskostnad);
         rumslista.add("Rum 3 " + rum3.rumsnamn + "- Pris per natt  " +  rum3.Rumskostnad);
@@ -29,6 +30,8 @@ public class Main {
         bokadeRum.add(rum2);
         bokadeRum.add(rum3);
         bokadeRum.add(rum4);
+
+
 
 
 
