@@ -9,12 +9,12 @@ public class Main {
    Scanner scanner = new Scanner(System.in);
         int summa = 0;
 
-        Room rum1 = new Room("Jupiter", 3000);
-        Room rum2 = new Room("Mars", 1600);
-        Room rum3 = new Room("Tellus", 1600);
-        Room rum4 = new Room("Pluto", 1600);
-        Room rum5 = new Room("Saturnus", 3000);
-        Room rum6 = new Room("Venus", 1600);
+        Room rum1 = new Room("Jupiter", 3000, true);
+        Room rum2 = new Room("Mars", 1600,true);
+        Room rum3 = new Room("Tellus", 1600,true);
+        Room rum4 = new Room("Pluto", 1600,true);
+        Room rum5 = new Room("Saturnus", 3000,true);
+        Room rum6 = new Room("Venus", 1600,true);
 
 
         List<String> rumslista = new ArrayList();
