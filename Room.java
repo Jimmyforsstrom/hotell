@@ -1,7 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Room {
 
@@ -14,6 +13,8 @@ public class Room {
         Rumskostnad = rumskostnad;
         this.roomavailable = roomavailable;
     }
+
+
 
     public String getRumsnamn() {
         return rumsnamn;
@@ -31,31 +32,18 @@ public class Room {
         Rumskostnad = rumskostnad;
     }
 
-    public int getTillval() {
-        return tillval;
-    }
 
-    public void setTillval(int tillval) {
-        this.tillval = tillval;
-    }
-
-    public int tillval;
 
     public boolean isRoomavailable() {
         return roomavailable;
     }
 
-    public void setRoomavailable(boolean roomavailable) {
+    public boolean setRoomavailable(boolean roomavailable) {
         this.roomavailable = roomavailable;
+        return roomavailable;
     }
 
-    /* Rum 1 = dubbelrum, guldrum:
-        Rum2 = dubbelrum silverrum;
-         */
-    public com.company.Room getRum1() {
-        System.out.println("Du valde rum1");
-        return getRum1();
-    }
+
 
 
 
