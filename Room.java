@@ -39,6 +39,9 @@ public class Room {
 
     public int tillval;
 
+    ArrayList<String> Sunlight = new ArrayList<>();
+
+
 
     /* Rum 1 = dubbelrum, guldrum:
     Rum2 = dubbelrum silverrum;
