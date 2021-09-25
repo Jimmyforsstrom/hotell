@@ -16,22 +16,20 @@ public class Main {
 
 
 
+        List<Room> rumslista = new ArrayList();
+        rumslista.add(rum1);
+        rumslista.add(rum2);
+        rumslista.add(rum3);
+        rumslista.add(rum4);
 
-        ArrayList<String> rumslista = new ArrayList();
-        rumslista.add("Rum 1 " + rum1.rumsnamn +  "- Pris per natt " +  rum1.Rumskostnad);
-        rumslista.add("Rum 2 " + rum2.rumsnamn + "- Pris per natt  " +  rum2.Rumskostnad);
-        rumslista.add("Rum 3 " + rum3.rumsnamn + "- Pris per natt  " +  rum3.Rumskostnad);
-        rumslista.add("Rum 4 " + rum4.rumsnamn + "- Pris per natt  " +  rum4.Rumskostnad);
 
         //Skapade objekt ligger nu i rumslista.
 
         List<Room> bokadeRum = new ArrayList();
-        bokadeRum.add(rum1);
+      /*  bokadeRum.add(rum1);
         bokadeRum.add(rum2);
         bokadeRum.add(rum3);
-        bokadeRum.add(rum4);
-
-
+        bokadeRum.add(rum4); */
 
 
 

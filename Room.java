@@ -1,7 +1,5 @@
 package com.company;
 
-
-
 public class Room {
 
     public String rumsnamn;
