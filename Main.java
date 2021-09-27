@@ -6,16 +6,13 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-   Scanner scanner = new Scanner(System.in);
-
-
+        Scanner scanner = new Scanner(System.in);
 
 
         Room rum1 = new Room("Jupiter", 3000, true);
-        Room rum2 = new Room("Mars", 1600,true);
-        Room rum3 = new Room("Tellus", 1600,true);
-        Room rum4 = new Room("Pluto", 1600,true);
-
+        Room rum2 = new Room("Mars", 1600, true);
+        Room rum3 = new Room("Tellus", 1600, true);
+        Room rum4 = new Room("Pluto", 1600, true);
 
 
         List<Room> rumslista = new ArrayList();
@@ -23,6 +20,9 @@ public class Main {
         rumslista.add(rum2);
         rumslista.add(rum3);
         rumslista.add(rum4);
+
+        Hotelmethods list = new Hotelmethods(rumslista);
+        Startsida.menuOptions();
 
 
 
@@ -38,6 +38,5 @@ public class Main {
     }
 
 
-
-    }
+}
 

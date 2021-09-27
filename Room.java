@@ -12,14 +12,17 @@ public class Room {
         this.roomavailable = roomavailable;
     }
     public String getRumsnamn() {
+
         return rumsnamn;
     }
 
     public void setRumsnamn(String rumsnamn) {
+
         this.rumsnamn = rumsnamn;
     }
 
     public int getRumskostnad() {
+
         return Rumskostnad;
     }
 
@@ -28,6 +31,7 @@ public class Room {
     }
 
     public boolean isRoomavailable() {
+
         return roomavailable;
     }
 

@@ -1,14 +1,18 @@
 package com.company;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Hotelmethods {
-    private ArrayList rumslista;
+    private List<Room> rumslista;
+
+
+
+
     Scanner scanner = new Scanner(System.in);
 
 
-    public Hotelmethods(ArrayList rumslista) {
+    public Hotelmethods(List<Room> rumslista) {
         this.rumslista = rumslista;
     }
 
@@ -20,11 +24,15 @@ public class Hotelmethods {
         for (int i = 0; i < rumslista.size(); i++)
             if (rumslista.equals(true)) {
                 System.out.println(i);
+                int menu = 0;
+                menu = scanner.nextInt();
+                rumslista.get(menu - 1);
+                rumslista.get(rumslista.indexOf(rumslista)).setRoomavailable(false);
+                /*scanner.nextInt(rumslista.indexOf(rumslista));
+                rumslista.get(rumslista.indexOf(rumslista)).setRoomavailable(false);
 
-
-
-            } else if (rumslista.equals(false)) {
-                System.out.println(rumslista);
+                 */
+            }
 
        /* Iterator itr = rumslista.iterator();
         while (((Iterator<?>) itr).hasNext()) {
@@ -35,7 +43,7 @@ public class Hotelmethods {
 
         */
 
-            }
+    }
        /* public void AvaliableRoom () {
             System.out.println("This is all valiable rooms");
             //se en lista på alla upptagna rum
@@ -49,7 +57,7 @@ public class Hotelmethods {
 
         */
     }
-}
+
 
 
 
