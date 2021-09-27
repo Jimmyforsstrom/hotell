@@ -9,6 +9,8 @@ public class Main {
    Scanner scanner = new Scanner(System.in);
 
 
+
+
         Room rum1 = new Room("Jupiter", 3000, true);
         Room rum2 = new Room("Mars", 1600,true);
         Room rum3 = new Room("Tellus", 1600,true);
@@ -23,6 +25,7 @@ public class Main {
         rumslista.add(rum4);
 
 
+
         //Skapade objekt ligger nu i rumslista.
 
         List<Room> bokadeRum = new ArrayList();
@@ -30,15 +33,6 @@ public class Main {
         bokadeRum.add(rum2);
         bokadeRum.add(rum3);
         bokadeRum.add(rum4); */
-
-
-
-
-
-
-
-
-
 
 
     }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Startsida {
 
 
-    public static void menu() {
+    public static int menu() {
 
         System.out.println("1. Boka ett tillgängligt rum");
         System.out.println("2. Checka ut från ett rum");
@@ -14,8 +14,18 @@ public class Startsida {
         System.out.println("5. Få notan för ett valt rum");
         System.out.println("6. Avsluta");
 
-
-
+        return 0;
+    }
+    public static void menuOptions(){
+        Scanner scanner = new Scanner(System.in);
+        boolean inuse = true;
+        while (inuse){
+            int choice = menu();
+            scanner.nextInt();
+            switch (choice){
+                case 1:
+            }
+        }
     }
 
 }
