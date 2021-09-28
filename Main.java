@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.nio.charset.StandardCharsets;
+import java.time.temporal.JulianFields;
 import java.util.*;
 
 public class Main {
@@ -8,31 +10,35 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        Sal [] mittHotell = new Sal[3];
+        mittHotell [0] = new Sal("Jupiter", 2000);
+        mittHotell [1] = new Sal("Mars", 1500);
+        mittHotell [2] = new Sal("Venus", 1250);
 
-        Room rum1 = new Room("Jupiter", 3000, true);
-        Room rum2 = new Room("Mars", 1600, true);
-        Room rum3 = new Room("Tellus", 1600, true);
-        Room rum4 = new Room("Pluto", 1600, true);
+        Sal [] bokadeRum = new Sal[3];
+        bokadeRum [0] = new Sal("", 0);
+        bokadeRum [1] = new Sal("", 0);
+        bokadeRum [2] = new Sal("", 0);
+
+        Startsida.menu();
+        int val = 0;
+        val = scanner.nextInt();
+        switch (val) {
+            case 1:
+                Salmetod.BokaSal(mittHotell, bokadeRum, val);
+                break;
+            case 2:
+                Salmetod.BokadeSalar(mittHotell, bokadeRum, val);
+                break;
+            case 3: Salmetod.seSalar(mittHotell, bokadeRum);
+        }
 
 
-        List<Room> rumslista = new ArrayList();
-        rumslista.add(rum1);
-        rumslista.add(rum2);
-        rumslista.add(rum3);
-        rumslista.add(rum4);
-
-        Hotelmethods list = new Hotelmethods(rumslista);
-        Startsida.menuOptions();
 
 
 
-        //Skapade objekt ligger nu i rumslista.
 
-        List<Room> bokadeRum = new ArrayList();
-      /*  bokadeRum.add(rum1);
-        bokadeRum.add(rum2);
-        bokadeRum.add(rum3);
-        bokadeRum.add(rum4); */
+
 
 
     }

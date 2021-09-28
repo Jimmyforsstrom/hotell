@@ -1,25 +1,21 @@
 package com.company;
 
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Hotelmethods {
+    private static Scanner scanner;
     private List<Room> rumslista;
-
-
-
-
-    Scanner scanner = new Scanner(System.in);
-
 
     public Hotelmethods(List<Room> rumslista) {
         this.rumslista = rumslista;
     }
 
 
+
+
     //booking
 
-    public void booking() {
+    public static void booking(List<Room> rumslista) {
         System.out.println("Book a room:");
         for (int i = 0; i < rumslista.size(); i++)
             if (rumslista.equals(true)) {
@@ -44,6 +40,18 @@ public class Hotelmethods {
         */
 
     }
+
+    public static void booking(ArrayList rumslista) {
+        System.out.println("Book a room:");
+        System.out.println("1,2,3");
+        System.out.println(rumslista.size());
+        System.out.println("1,2,3");
+        }
+
+    //  public List booking(List<Room> rumslista) {
+    //    System.out.println("fel booking");
+      //  List<Room> uppdaterdLista = new ArrayList();
+       // return uppdaterdLista; }
        /* public void AvaliableRoom () {
             System.out.println("This is all valiable rooms");
             //se en lista på alla upptagna rum
