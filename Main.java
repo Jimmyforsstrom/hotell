@@ -21,6 +21,13 @@ public class Main {
         bokadeRum[1] = new Sal("", 0);
         bokadeRum[2] = new Sal("", 0);
 
+        Roomservice[] roomservices = new Roomservice[5];
+        roomservices[0] = new Roomservice("Breakfast", 100);
+        roomservices[1] = new Roomservice("Lunch", 150);
+        roomservices[2] = new Roomservice("Dinner", 300);
+        roomservices[3] = new Roomservice("Champagne", 600);
+        roomservices[4] = new Roomservice("Cheese", 150);
+
         Startsida.menu();
 
        while (rullarMenyn) {
