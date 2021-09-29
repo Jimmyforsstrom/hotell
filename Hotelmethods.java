@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.*;
-
+/*
 public class Hotelmethods {
 
 
@@ -56,8 +56,8 @@ public class Hotelmethods {
         return uppdaterdLista; }
 
 
-        public void AvaliableRoom () {
-            System.out.println("This is all valiable rooms");
+        public void AvailiableRoom () {
+            System.out.println("This is all availiable rooms");
             //se en lista på alla upptagna rum
             //se en lista på all lediga rum
         }
@@ -70,6 +70,8 @@ public class Hotelmethods {
 
 
     }
+
+ */
 
 
 

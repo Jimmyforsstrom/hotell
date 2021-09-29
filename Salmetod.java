@@ -13,6 +13,7 @@ public class Salmetod {
         System.out.println("Du valde " + mittHotell[val].getNamn() + " till en kostnad för " + mittHotell[val].getCost());
         bokadeRum[val] = mittHotell[val];
 
+
         scanner.nextLine();
         Startsida.menu();
     }
@@ -35,23 +36,22 @@ public class Salmetod {
 
     //Meny 3
     public static void seSalar(Sal[] mittHotell, Sal[] bokadeRum) {
+        System.out.println("Lediga rum är:");
         for (Sal s : mittHotell
         ) {
-            System.out.println(s.getNamn() + " och kostar " + s.getCost());
+            System.out.println(s.getNamn() + " kostar " + s.getCost());
         }
         System.out.println("-----------------------");
+        System.out.println("Bokade rum är:");
+        for (Sal l : bokadeRum){
+            System.out.println(l.getNamn()+ " kostar " + l.getCost());
+        }
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
         Startsida.menu();
     }
 
-    public static void allaSalar(Sal[] mittHotell, Sal[] bokadeRum){
-        System.out.println("Alla lediga rum "\n + mittHotell);
-        System.out.println("Alla bokade rum "\n + bokadeRum);
 
-
-
-    }
 }
 
 
