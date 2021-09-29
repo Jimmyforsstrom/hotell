@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Salmetod {
@@ -84,16 +85,32 @@ public class Salmetod {
 
     public static void roomservice(Sal[] bokadeRum, Roomservice[] roomservices){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Select a room you would lika to add or remove roomservcie to\n" + bokadeRum);
-        int roomChoice = scanner.nextInt();
+        System.out.println("Select a room to add or remove roomservice to");
+        for (Sal s : bokadeRum)
+        System.out.println(s.getNamn());
+        int roomChoice = scanner.nextInt() - 1;
+        System.out.println("You chose " + bokadeRum[roomChoice].getNamn());
 
         System.out.println("Press 1 to add roomservice\n" + "Press 2 to remove roomservice");
         int choice = scanner.nextInt();
 
         if (choice == 1){
+            System.out.println("Choose roomservice to add to the room");
+            for (Roomservice t : roomservices)
+                System.out.println(t.getRoomservice());
+                int servicechoice = scanner.nextInt();
+                roomservices[roomChoice].getRoomservice();
+
+                roomservices[servicechoice].setChosen(false);
+
+
+
+
 
 
         }else if (choice == 2){
+            for (Roomservice f : roomservices);
+
 
         }
 
