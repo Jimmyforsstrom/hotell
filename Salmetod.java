@@ -61,6 +61,7 @@ public class Salmetod {
         //Tar bort indexet från bokadeRum, samt addera det mitthotell?
     }
 
+
     //Meny 3
     public static void seSalar(Sal[] mittHotell, Sal[] bokadeRum) {
         System.out.println("Alla rum är nedan ");
@@ -80,12 +81,21 @@ public class Salmetod {
       //  Startsida.menu();
     }
 
-    public static void allaSalar(Sal[] mittHotell, Sal[] bokadeRum){
-        System.out.println("Alla lediga rum \n" + mittHotell);
-        System.out.println("Alla bokade rum \n" + bokadeRum);
+    public static void addroomservice(Sal[] bokadeRum, Roomservice[] roomservices){
+        System.out.println("Select which room you would like to add roomservice to\n" + bokadeRum);
+        Scanner scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
 
+        while (true){
+            System.out.println("Which service would you like to add to your room\n" + roomservices);
+            int choice2 = scanner.nextInt();
 
-
+        }
+    }
+    public static void removeRoomservices(Sal[] bokadeRum, Roomservice[] roomservices){
+        System.out.println("Select which room you would like to remove roomservice from\n" + bokadeRum);
+        Scanner scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
     }
 }
 

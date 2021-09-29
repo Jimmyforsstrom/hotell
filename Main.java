@@ -17,7 +17,7 @@ public class Main {
         mittHotell[2] = new Sal("Venus", 1250);
 
         Sal[] bokadeRum = new Sal[3];
-        bokadeRum[0] = new Sal("", 0);
+        bokadeRum[0] = new Sal("Jupiter", 2000);
         bokadeRum[1] = new Sal("", 0);
         bokadeRum[2] = new Sal("", 0);
 
