@@ -17,8 +17,6 @@ public class Salmetod {
         }
         }
 
-
-
         Scanner scanner = new Scanner(System.in);
         val = scanner.nextInt() - 1;
         if (mittHotell[val].isOckuperat()) {
