@@ -23,20 +23,22 @@ public class Main {
 
         Startsida.menu();
 
-        do {
-            val = scanner.nextInt();
+       while (rullarMenyn) {
+           val = scanner.nextInt();
 
-            switch (val) {
-                case 1:
-                    Salmetod.BokaSal(mittHotell, bokadeRum, val);
-                    break;
-                case 2:
-                    Salmetod.BokadeSalar(mittHotell, bokadeRum, val);
-                    break;
-                case 3:
-                    Salmetod.seSalar(mittHotell, bokadeRum);
-            }
-        }  while (val != 6) ;
+           switch (val) {
+               case 1:
+                   Salmetod.BokaSal(mittHotell, bokadeRum, val);
+                   break;
+               case 2:
+                   Salmetod.BokadeSalar(mittHotell, bokadeRum, val);
+                   break;
+               case 3:
+                   Salmetod.seSalar(mittHotell, bokadeRum);
+               case 6:
+                   rullarMenyn = false;
+           }
+       }
     }
 }
 

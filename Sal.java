@@ -6,6 +6,16 @@ public class Sal {
     public int cost = 0;
     public int val;
 
+    public boolean isOckuperat() {
+        return ockuperat;
+    }
+
+    public void setOckuperat(boolean ockuperat) {
+        this.ockuperat = ockuperat;
+    }
+
+    public boolean ockuperat = false;
+
     public Sal (String namn, int cost) {
         this.namn = namn;
         this.cost = cost;
