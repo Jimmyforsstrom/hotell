@@ -3,6 +3,8 @@ package com.company;
 import java.util.*;
 
 public class Hotelmethods {
+
+
     private static Scanner scanner;
     private List<Room> rumslista;
 
@@ -24,20 +26,20 @@ public class Hotelmethods {
                 menu = scanner.nextInt();
                 rumslista.get(menu - 1);
                 rumslista.get(rumslista.indexOf(rumslista)).setRoomavailable(false);
-                /*scanner.nextInt(rumslista.indexOf(rumslista));
+                scanner.nextInt(rumslista.indexOf(rumslista));
                 rumslista.get(rumslista.indexOf(rumslista)).setRoomavailable(false);
 
-                 */
+
             }
 
-       /* Iterator itr = rumslista.iterator();
+        Iterator itr = rumslista.iterator();
         while (((Iterator<?>) itr).hasNext()) {
             Room rum = (Room) itr.next();
             System.out.println("rum " + rum.rumsnamn + " med en kostnad på " + rum.Rumskostnad);
 
         }
 
-        */
+
 
     }
 
@@ -48,11 +50,13 @@ public class Hotelmethods {
         System.out.println("1,2,3");
         }
 
-    //  public List booking(List<Room> rumslista) {
-    //    System.out.println("fel booking");
-      //  List<Room> uppdaterdLista = new ArrayList();
-       // return uppdaterdLista; }
-       /* public void AvaliableRoom () {
+      public List booking(List<Room> rumslista) {
+       System.out.println("fel booking");
+       List<Room> uppdaterdLista = new ArrayList();
+        return uppdaterdLista; }
+
+
+        public void AvaliableRoom () {
             System.out.println("This is all valiable rooms");
             //se en lista på alla upptagna rum
             //se en lista på all lediga rum
@@ -63,8 +67,10 @@ public class Hotelmethods {
             //loopa ut alla tagna rum
         }
 
-        */
+
+
     }
+
 
 
 
@@ -73,7 +79,7 @@ public class Hotelmethods {
     //available rooms
     //list all rooms
     //checkout
-    // add roomservice
+
 
 
 

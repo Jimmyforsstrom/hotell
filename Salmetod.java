@@ -44,6 +44,14 @@ public class Salmetod {
         scanner.nextLine();
         Startsida.menu();
     }
+
+    public static void allaSalar(Sal[] mittHotell, Sal[] bokadeRum){
+        System.out.println("Alla lediga rum "\n + mittHotell);
+        System.out.println("Alla bokade rum "\n + bokadeRum);
+
+
+
+    }
 }
 
 
