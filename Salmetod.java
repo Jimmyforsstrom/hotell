@@ -97,9 +97,17 @@ public class Salmetod {
         if (choice == 1){
             System.out.println("Choose roomservice to add to the room");
             for (Roomservice t : roomservices)
-                System.out.println(t.getRoomservice());
+                System.out.println(t.getRoomservice()+ " " + t.getRoomservicecost());
                 int servicechoice = scanner.nextInt();
                 roomservices[roomChoice].getRoomservice();
+
+            System.out.println(roomservices[servicechoice].getRoomservicecost() + " kommer att läggas på din rumsnota");
+             int value =  bokadeRum[roomChoice].getCost();
+             int value2 =  roomservices[servicechoice].getRoomservicecost();
+             int totalValue =    value + value2;
+
+            System.out.println("total charge is " + totalValue);
+
 
                 roomservices[servicechoice].setChosen(false);
 
