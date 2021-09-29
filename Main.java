@@ -42,6 +42,8 @@ public class Main {
                    break;
                case 3:
                    Salmetod.seSalar(mittHotell, bokadeRum);
+               case 4:
+                   Salmetod.roomservice(bokadeRum , roomservices);
                case 6:
                    rullarMenyn = false;
            }
