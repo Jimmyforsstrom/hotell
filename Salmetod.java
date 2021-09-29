@@ -80,13 +80,18 @@ public class Salmetod {
       //  scanner.nextLine();
       //  Startsida.menu();
     }
+
+
     public static void roomservice(Sal[] bokadeRum, Roomservice[] roomservices){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Select a room you wold lika to add or remove roomservcie to\n" + bokadeRum);
-        int choice = scanner.nextInt();
+        System.out.println("Select a room you would lika to add or remove roomservcie to\n" + bokadeRum);
+        int roomChoice = scanner.nextInt();
+
         System.out.println("Press 1 to add roomservice\n" + "Press 2 to remove roomservice");
+        int choice = scanner.nextInt();
 
         if (choice == 1){
+
 
         }else if (choice == 2){
 
